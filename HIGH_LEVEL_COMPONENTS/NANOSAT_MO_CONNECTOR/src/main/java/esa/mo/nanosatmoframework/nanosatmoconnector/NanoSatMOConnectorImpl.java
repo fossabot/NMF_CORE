@@ -176,10 +176,14 @@ public final class NanoSatMOConnectorImpl extends NanoSatMOFrameworkProvider {
             // Are the dynamic changes enabled?
             if ("true".equals(System.getProperty(DYNAMIC_CHANGES_PROPERTY))) {
                 Logger.getLogger(NanoSatMOConnectorImpl.class.getName()).log(Level.INFO, "Loading previous configurations...");
-                this.loadConfigurations();
+                try {
+                    this.loadConfigurations();
+                } catch (IOException ex) {
+                    Logger.getLogger(NanoSatMOConnectorImpl.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
 
-            MCRegistration registration = new MCRegistration(mcServices.getParameterService(), 
+            MCRegistration registration = new MCRegistration(comServices, mcServices.getParameterService(), 
                     mcServices.getAggregationService(), mcServices.getAlertService(), mcServices.getActionService());
             mcAdapter.initialRegistrations(registration);
         }

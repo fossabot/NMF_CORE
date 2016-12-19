@@ -79,6 +79,9 @@ public abstract class NanoSatMOSupervisor extends NanoSatMOFrameworkProvider {
         try {
             this.comServices.init();
             this.heartbeatService.init();
+            
+            // Change transport to start on both RMI and SPP
+            
             this.directoryService.init(comServices);
             this.applicationsManagerService.init(comServices, directoryService);
             this.packageManagementService.init(comServices, packageManagementBackend);

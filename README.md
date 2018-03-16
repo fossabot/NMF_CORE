@@ -1,4 +1,6 @@
 # NanoSat MO Framework
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fesa%2FNMF_CORE.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fesa%2FNMF_CORE?ref=badge_shield)
+
 The NanoSat MO Framework is a software framework for nanosatellites based on CCSDS Mission Operations services.
 
 It introduces the concept of apps in space that can be started and stopped from ground. Apps can retrieve data from the platform through a set of well-defined MO services. Many possibilities for extensions are available due to its modular and flexible design approach which is not limited to the space segment but extends down to ground by providing all the building blocks for a complete and free end-to-end solution. The research was carried by Graz University of Technology in partnership with the European Space Agency.
@@ -27,3 +29,6 @@ The NanoSat MO Framework is **licensed** under the **[European Space Agency Publ
 [GitHub]: https://github.com/NanoSat-MO-Framework
 [Bug Reports]: https://github.com/CesarCoelho/BUG_REPORTS_NANOSAT_MO_FRAMEWORK/issues
 [website]: http://www.esa.int/
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fesa%2FNMF_CORE.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fesa%2FNMF_CORE?ref=badge_large)
